@@ -1,0 +1,8 @@
+version: '3'
+services:
+  redis-server: # any name you want
+    image: 'redis'
+  node-app: # any name you want
+    build: .
+    ports:
+      - "4001:8081" # map 4001 port on our local computer to 8081 port of the container
